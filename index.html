@@ -1,33 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./solution/style.css" />
-    <title>To-Do-App</title>
-  </head>
-  <body>
-    <div class="container border border-3 border-danger mt-4">
-      <h1 class="display-6 text-center text-info fw-bold">TO-DO-APP</h1>
-      <img class="todo" src="./img/to-do-list.png" alt="to-do-list" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="./solution/style.css">
+  <title>To-Do-App</title>
+</head>
+
+<body>
+  <div class="title text-center text-bg-info p-3 mt-4">
+    <h1 class="display-6 fw-bold ">TO-DO-APP</h1>
+    <img src="./img/to-do-list.jpg" alt="">
+    <h3>Happy Wednesday <i class="fa-solid fa-mug-hot"></i> </h3>
+  </div>
+
+  <div class="container text-center">
+
+    <div class="todo-area">
+      <input type="text" name="todo" id="todo_input" placeholder="Add Todo Items ..." autofocus="on" autocomplete="off"></input>
+      <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
     </div>
 
-    <div class="container">
-      <div class="todo-area">
-        <input type="text" name="todo" id="todo_input" placeholder="Add Todo Items ..." autofocus></input>
-      <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
-      </div>
-    </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <section class="todo-fields">
+      <ul class="todo-items">
+         
+
+
+
+      </ul>
+    </section>
+
+  </div>
+
+  <h2 class="result text-center">No tasks</h2>
+
+ 
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+  <script src="./app/app.js"></script>
+</body>
+
 </html>
