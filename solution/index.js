@@ -5,12 +5,12 @@ const todoInput = document.getElementById("todo-input");
 
 const todoUl = document.getElementById("todo-ul");
 
-//? baslangicta input aktif olsun:
+//? make input active at startup:
 window.onload = function () {
   todoInput.focus();
 };
 
-//? add buton event inin tanimlanmasi:
+//? addEventListener for ADD button:
 btn.addEventListener("click", (e) => {
   if (!todoInput.value) {
     alert(`Please enter your todo`);
@@ -26,28 +26,28 @@ btn.addEventListener("click", (e) => {
   }
 });
 
-//? Klavyeden enter tusuna basilmasi ile add butonunun click fonk. cagrilmasi:
+//? Calling the click function of the add button by pressing the enter key from the keyboard:
 todoInput.addEventListener("keydown", (e) => {
   if (e.key === "Enter") {
     btn.click();
   }
 });
 
-//? delete ve ok butonlari icin event tanimlamasi:
+//? addEventListener for delete and ok buttons:
 todoUl.addEventListener("click", (e) => {
-  //! Event sil butonlarinin birisinden geldiyse;
+  //! If the event came from one of the delete buttons;
   if (e.target.classList.contains("fa-trash")) {
-    //? ilgili li elementini silerek DOM'u güncelle:
+    //? Update the DOM by deleting the corresponding li element!
     e.target.parentElement.remove();
   }
 
-  //! Event silme ve ok butonlarinin birisinden geldiyse;
+  //! If the event came from one of the delete and ok buttons;
   if (e.target.classList.contains("fa-check")) {
-    //? ilgili li elementinde checked adinda bir class varsa bunu sil:
+    //? If there is a class named checked in the relevant li element, delete it!
     if (e.target.parentElement.classList.contains("checked")) {
       e.target.parentElement.classList.remove("checked");
     } else {
-      //? ilgili li elementinde checked adinda bir class yoksa ekle:
+      //? If there is no class named checked in the relevant li element, add!
       e.target.parentElement.classList.add("checked");
     }
   }
