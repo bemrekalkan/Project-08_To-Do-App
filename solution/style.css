@@ -29,8 +29,8 @@ body {
 
 header {
   font-size: 3rem;
-  color: rgb(229, 26, 57);
-  text-shadow: 3px 5px 10px black;
+  color: rgb(43, 26, 229);
+  text-shadow: 3px 5px 10px rgba(246, 246, 8, 0.7);
   text-align: center;
   padding: 1rem;
 }
